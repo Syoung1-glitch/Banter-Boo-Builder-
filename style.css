@@ -1,0 +1,68 @@
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+h1 {
+  background-color: #ffcc00;
+  padding: 10px;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 10px;
+}
+
+.parts-panel, .canvas-panel {
+  flex: 1 1 300px;
+  margin: 10px;
+}
+
+.parts {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.parts img {
+  width: 80px;
+  height: auto;
+  cursor: grab;
+}
+
+.canvas {
+  width: 100%;
+  min-height: 300px;
+  border: 2px dashed #ccc;
+  margin-top: 10px;
+  position: relative;
+  background-color: #f9f9f9;
+}
+
+.canvas img {
+  position: absolute;
+  touch-action: none;
+}
+
+button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+}
+
+@media (max-width: 600px) {
+  .parts img {
+    width: 60px;
+  }
+
+  button {
+    width: 100%;
+  }
+}

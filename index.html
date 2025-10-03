@@ -1,0 +1,30 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Monster Builder</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Monster Builder</h1>
+  <div class="container">
+    <div class="parts-panel">
+      <h2>Parts</h2>
+      <div class="parts" id="parts">
+        <img src="9ea03a9c36.png" class="draggable" draggable="true" />
+        <img src="95e933db80.png" class="draggable" draggable="true" />
+        <img src="8432854690.png" class="draggable" draggable="true" />
+        <img src="6b0d90e33d.png" class="draggable" draggable="true" />
+      </div>
+    </div>
+    <div class="canvas-panel">
+      <h2>Your Monster</h2>
+      <div id="canvas" class="canvas"></div>
+      <button onclick="resetCanvas()">Reset</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
